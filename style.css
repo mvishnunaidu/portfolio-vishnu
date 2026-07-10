@@ -188,9 +188,9 @@ a:focus-visible, button:focus-visible{ outline: 2px solid var(--violet); outline
   display:inline-block; padding: 6px 14px; border-radius: 999px; margin: 0 0 20px;
 }
 .eyebrow-blue {
-  color: var(--blue);
-  background: color-mix(in srgb, var(--blue) 15%, transparent);
-  border: 1px solid color-mix(in srgb, var(--blue) 40%, transparent);
+  color: #2563EB;
+  background: color-mix(in srgb, #2563EB 15%, transparent);
+  border: 1px solid color-mix(in srgb, #2563EB 40%, transparent);
   font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
 }
 .eyebrow-green {
