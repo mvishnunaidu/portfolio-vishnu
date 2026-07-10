@@ -616,6 +616,10 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
   }
   
   /* Override large desktop inline styles for mobile */
+  .intro-content { gap: 16px !important; }
+  .intro-logo { height: 48px !important; }
+  .intro-text { font-size: 1.6rem !important; gap: 8px !important; flex-wrap: wrap; justify-content: center; }
+  
   .section, section[id] { 
     padding: 60px var(--pad) 40px !important; 
     scroll-margin-top: 60px; 
