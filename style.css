@@ -679,11 +679,10 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
   .hero-role { font-size: 0.95rem !important; margin-bottom: 12px !important; }
   
   /* Small "Available for opportunities" tag */
-  .eyebrow-emoji { display: none; }
   .eyebrow { 
-    font-size: 0.6rem !important; 
-    padding: 4px 8px !important; 
-    margin: 0 0 12px 0 !important; 
+    font-size: 0.55rem !important; 
+    padding: 2px 8px !important; 
+    margin: 0 0 10px 0 !important; 
     display: inline-block !important; 
     background: color-mix(in srgb, var(--violet) 10%, transparent) !important;
     border: 1px solid color-mix(in srgb, var(--violet) 20%, transparent) !important;
