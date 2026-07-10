@@ -34,10 +34,10 @@
   const el = document.getElementById('photoRole');
   if(!el) return;
   const roles = [
-    'ML / GenAI Engineer',
-    'Full-Stack Python Dev',
-    'Software Engineer',
-    'Backend API Developer'
+    'Aspiring ML / GenAI Engineer',
+    'Aspiring Full-Stack Python Dev',
+    'Aspiring Software Engineer',
+    'Aspiring Backend API Developer'
   ];
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if(reduced){ el.textContent = roles[0]; return; }
