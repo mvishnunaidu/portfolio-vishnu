@@ -193,10 +193,10 @@ a:focus-visible, button:focus-visible{ outline: 2px solid var(--violet); outline
   border: 1px solid color-mix(in srgb, #2563EB 40%, transparent);
   font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
 }
-.eyebrow-gold {
-  color: #EAB308;
-  background: color-mix(in srgb, #EAB308 15%, transparent);
-  border: 1px solid color-mix(in srgb, #EAB308 40%, transparent);
+.eyebrow-teal {
+  color: #14B8A6;
+  background: color-mix(in srgb, #14B8A6 15%, transparent);
+  border: 1px solid color-mix(in srgb, #14B8A6 40%, transparent);
   font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
 }
 .eyebrow-skyblue {
