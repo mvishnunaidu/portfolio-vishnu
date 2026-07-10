@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Vishnu Vardhan Naidu's Portfolio</title>
+<meta name="description" content="Muchinthala Vishnu Vardhan Naidu — B.Tech CSE graduate building applied Machine Learning and Generative AI systems.">
+<link rel="icon" href="assets/img/profile.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== INTRO ===== -->
+<div id="intro-screen" class="intro-screen">
+  <div class="intro-content">
+    <img src="assets/img/v_logo.png" alt="V" class="intro-logo">
+    <h1 class="intro-text">
+      <span>Welcome</span>
+      <span>to my</span>
+      <span>portfolio.</span>
+    </h1>
+  </div>
+</div>
+<div class="mesh-bg" aria-hidden="true"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-brand">
+      <img src="assets/img/v_logo.png" alt="" class="brand-logo">
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="https://github.com/mvishnunaidu" target="_blank" rel="noopener" class="nav-repo">Visit Repo ↗</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg id="iconSun" viewBox="0 0 24 24" width="19" height="19"><circle cx="12" cy="12" r="4.6" fill="none" stroke="currentColor" stroke-width="1.8"/><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="1.8" x2="12" y2="4.4"/><line x1="12" y1="19.6" x2="12" y2="22.2"/><line x1="4.2" y1="4.2" x2="6" y2="6"/><line x1="18" y1="18" x2="19.8" y2="19.8"/><line x1="1.8" y1="12" x2="4.4" y2="12"/><line x1="19.6" y1="12" x2="22.2" y2="12"/><line x1="4.2" y1="19.8" x2="6" y2="18"/><line x1="18" y1="6" x2="19.8" y2="4.2"/></g></svg>
+      </button>
+      <button class="nav-burger" id="navBurger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow reveal-left">👋 Available for opportunities</p>
+      <h1 class="hero-title reveal-scale">Hi, I'm <span class="grad-text">Vishnu Vardhan<br>Naidu</span></h1>
+      <p class="hero-role reveal-left"><span class="typed" id="typedRole"></span><span class="caret">|</span></p>
+      <p class="hero-desc reveal-scale">
+        Computer Science graduate with hands-on experience in full-stack development,
+        Python, and machine learning. Actively seeking opportunities to kickstart my
+        career as a Machine Learning / GenAI Engineer.
+      </p>
+      <div class="hero-actions reveal-scale">
+        <a href="https://github.com/mvishnunaidu" target="_blank" rel="noopener" class="btn btn-primary">GitHub Profile <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.4-5.25 5.68.41.36.78 1.06.78 2.14 0 1.54-.01 2.79-.01 3.17 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg></a>
+        <a href="assets/vishnu_resume.pdf" target="_blank" rel="noopener" class="btn btn-secondary">Resume <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Z"/><path d="M14 2v6h6M9 13h6M9 17h6M9 9h1"/></svg></a>
+        <a href="assets/nexus-card/index.html" target="_blank" rel="noopener" class="btn btn-ghost" title="Digital contact card">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2.5"/><line x1="2" y1="9.5" x2="22" y2="9.5"/><line x1="6" y1="14" x2="11" y2="14"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-right">
+      <div class="orbit-icon oi-1" title="Python"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></div>
+      <div class="orbit-icon oi-2" title="FastAPI"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI"></div>
+      <div class="orbit-icon oi-3" title="React"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"></div>
+      <div class="orbit-icon oi-4" title="PyTorch"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch"></div>
+      <div class="orbit-icon oi-5" title="JavaScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"></div>
+
+      <div class="photo-ring">
+        <div class="photo-frame">
+          <img src="assets/img/profile.png" alt="Muchinthala Vishnu Vardhan Naidu">
+        </div>
+        <span class="status-dot"></span>
+      </div>
+      <div class="hero-tag">
+        <span class="tag-dot"></span> Aspiring ML / GenAI Engineer
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue reveal"><span>Scroll to explore</span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v16m0 0-6-6m6 6 6-6"/></svg></a>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section" id="about">
+  <div class="section-inner" style="max-width: 1200px; padding-top: 10px;">
+    <p class="eyebrow reveal-scale center">About Me</p>
+    <h2 class="section-title reveal-scale" style="margin-bottom: 80px;">Digital Experiences</h2>
+
+    <!-- Row 1 -->
+    <div style="display: grid; grid-template-columns: 2.2fr 1fr; gap: 80px; margin-bottom: 120px; align-items: start;">
+      
+      <!-- My Journey -->
+      <div class="reveal-left bento-card">
+        <h3 style="font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; margin-bottom: 24px;">My Journey</h3>
+        <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 40px; font-size: 1.05rem;">I am a B.Tech CSE graduate from NBKR Institute of Science and Technology. I have practical exposure to building RESTful APIs, handling structured datasets, and deploying database-driven applications. I am seeking an entry-level Software Engineer role focused on scalable and real-world solutions.</p>
+        <div style="display: flex; gap: 40px;">
+          <div style="text-align: center;">
+            <span class="about-gradient-text">4+</span>
+            <span style="font-size: .95rem; color: var(--text-faint);">Years Coding</span>
+          </div>
+          <div style="text-align: center;">
+            <span class="about-gradient-text">10+</span>
+            <span style="font-size: .95rem; color: var(--text-faint);">Projects Built</span>
+          </div>
+          <div style="text-align: center;">
+            <span class="about-gradient-text">NBKRIST</span>
+            <span style="font-size: .95rem; color: var(--text-faint);">College</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="reveal-right bento-card" style="position: relative;">
+        <div class="about-gradient-bg" style="width: 54px; height: 54px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 14.72l5-2.45v3.72z"/></svg>
+        </div>
+        <h3 style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; margin-bottom: 24px;">Education</h3>
+        <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 24px; font-size: .95rem; max-width: 280px;">B.Tech in Computer Science and Engineering<br>NBKR Institute of Science and Technology</p>
+        <span style="font-family: var(--font-mono); font-size: .9rem; font-weight: 700; background: linear-gradient(to right, #8B5CF6, #3B82F6, #0EA5E9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent;">2022 - 2026</span>
+      </div>
+
+    </div>
+
+    <!-- Row 2 -->
+    <div style="display: grid; grid-template-columns: 1fr 2.2fr; gap: 80px; align-items: start;">
+      
+      <!-- Passion -->
+      <div class="reveal-left bento-card">
+        <div class="about-gradient-bg" style="width: 54px; height: 54px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>
+        </div>
+        <h3 style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; margin-bottom: 24px;">Passion</h3>
+        <div style="display: flex; flex-direction: column; gap: 14px; align-items: flex-start;">
+          <span class="passion-tag">Aspiring Software Engineer</span>
+          <span class="passion-tag">Full Stack Development</span>
+          <span class="passion-tag">AI &amp; ML</span>
+        </div>
+      </div>
+
+      <!-- Tech Stack -->
+      <div class="reveal-right bento-card">
+        <h3 style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; margin-bottom: 24px;">Tech Stack</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 14px;">
+          <span class="tech-badge"><svg viewBox="0 0 448 512" width="16" height="16" fill="currentColor"><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4 .1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8 .1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3 .1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg>Python</span>
+          <span class="tech-badge"><svg viewBox="0 0 448 512" width="16" height="16" fill="currentColor"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM243.8 381.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/></svg>JavaScript</span>
+          <span class="tech-badge"><svg viewBox="0 0 384 512" width="16" height="16" fill="currentColor"><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg>HTML5 / CSS3</span>
+          <span class="tech-badge"><svg viewBox="0 0 512 512" width="16" height="16" fill="currentColor"><path d="M64 32C28.7 32 0 60.7 0 96v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm48 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM64 288c-35.3 0-64 28.7-64 64v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V352c0-35.3-28.7-64-64-64H64zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm56 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>Django / DRF</span>
+          <span class="tech-badge"><svg viewBox="0 0 448 512" width="16" height="16" fill="currentColor"><path d="M288 144v45.1l82.7 137.9c13.7 22.8 15.6 51 5.3 75.3S347.1 448 320 448H128c-27.1 0-50.6-14.7-60.9-39.7s-8.4-52.5 5.3-75.3L155.2 189.1V144H112c-17.7 0-32-14.3-32-32s14.3-32 32-32h52.8 118.4H336c17.7 0 32 14.3 32 32s-14.3 32-32 32h-48z"/></svg>Flask</span>
+          <span class="tech-badge"><svg viewBox="0 0 448 512" width="16" height="16" fill="currentColor"><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></svg>MySQL</span>
+          <span class="tech-badge"><svg viewBox="0 0 448 512" width="16" height="16" fill="currentColor"><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></svg>MongoDB</span>
+          <span class="tech-badge"><svg viewBox="0 0 512 512" width="16" height="16" fill="currentColor"><path d="M184 0c30.9 0 58.1 17.3 72 43.1C270 17.3 297.1 0 328 0c48.6 0 88 39.4 88 88c0 11.1-2.1 21.7-5.9 31.5C450.7 135 480 174.9 480 224c0 40-21.8 74.8-54 94.6C437.5 334.3 448 355.9 448 384c0 41.5-22.4 77.8-55.5 96.6C383.1 498.4 360 512 334 512H178c-26 0-49.1-13.6-58.5-31.4C86.4 461.8 64 425.5 64 384c0-28.1 10.5-49.7 22-65.4C53.8 298.8 32 264 32 224c0-49.1 29.3-89 69.9-104.5C98.1 109.7 96 99.1 96 88C96 39.4 135.4 0 184 0zM224 448v32h64V448H224zm-48-96h-8c-26.5 0-48 21.5-48 48s21.5 48 48 48h8V352zm160 0v96h8c26.5 0 48-21.5 48-48s-21.5-48-48-48h-8zm10-128H166c-16.6 0-30 13.4-30 30v42h240v-42c0-16.6-13.4-30-30-30zM368 224c0-17.7-14.3-32-32-32H176c-17.7 0-32 14.3-32 32s14.3 32 32 32H336c17.7 0 32-14.3 32-32z"/></svg>Machine Learning</span>
+          <span class="tech-badge"><svg viewBox="0 0 512 512" width="16" height="16" fill="currentColor"><path d="M64 256V160H224v96H64zm0 64H224v96H64V320zm224 96V320H448v96H288zM448 256H288V160H448v96zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg>Pandas / NumPy</span>
+          <span class="tech-badge"><svg viewBox="0 0 448 512" width="16" height="16" fill="currentColor"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>Git</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section class="section section-alt" id="experience" style="padding-top: 60px;">
+  <div class="section-inner">
+    <p class="eyebrow reveal-scale center">Experience</p>
+    <h2 class="section-title reveal-scale center">Where I've worked.</h2>
+    <div class="timeline">
+      <div class="timeline-item reveal-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-when">Dec 2025 — Present</span>
+          <h3>AI &amp; Machine Learning Intern</h3>
+          <p class="timeline-org">ThopsTech Career Solutions · Bangalore, India</p>
+          <ul>
+            <li>Worked with machine learning models in Python using Scikit-learn, including data preprocessing, exploratory analysis, and model evaluation on real-world datasets.</li>
+            <li>Applied supervised learning techniques such as regression and classification, and compared model performance using accuracy and other evaluation metrics.</li>
+            <li>Used Pandas and NumPy to clean and prepare structured datasets for training and evaluating machine learning models.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item reveal-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-when">Jun 2025 — Aug 2025</span>
+          <h3>Data Science Intern</h3>
+          <p class="timeline-org">Talent Trek E-Learning · Bangalore, India</p>
+          <ul>
+            <li>Processed and analyzed datasets using Python, Pandas, and NumPy, performing end-to-end data collection, cleaning, exploratory analysis, and visualization.</li>
+            <li>Created 5+ data visualizations and applied machine learning methods to extract insights that supported analytical decision making.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="section" id="projects" style="padding-top: 60px;">
+  <div class="section-inner">
+    <p class="eyebrow reveal-scale center">Projects</p>
+    <h2 class="section-title reveal-scale center">Things I've built end to end.</h2>
+
+    <div class="project-filters reveal-scale center" style="display: flex; justify-content: center; gap: 12px; margin-bottom: 32px;">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web Dev</button>
+      <button class="filter-btn" data-filter="ai">AI & ML</button>
+    </div>
+
+    <div class="project-grid">
+      <div class="project-card reveal-scale featured" data-category="ai" id="solarnet-card">
+        <div class="project-media"><img src="assets/projects/solarnet.png" alt="SolarNet Pro" loading="lazy"></div>
+        <div class="project-body">
+          <span class="project-tag">ai · full-stack</span>
+          <h3>SolarNet Pro</h3>
+          <p>Full-stack ML web app predicting solar radiation from meteorological data via a production Flask API. Designed to help renewable energy sectors optimize solar panel placements and estimate energy yields accurately. The system processes real-time weather features to provide reliable solar irradiance forecasts, enabling data-driven decision-making for energy grids.</p>
+          <ul class="project-points">
+            <li><strong>Use Case:</strong> Estimating energy yields and optimizing solar farm locations.</li>
+            <li>Random Forest &amp; XGBoost tuned to R² = 0.953 / 0.964.</li>
+            <li>Robust data preprocessing pipeline handling missing values and feature scaling.</li>
+            <li>CORS handling, input validation, multi-layer fallback system.</li>
+          </ul>
+          <div class="project-stack"><span class="skill-purple">Flask</span><span class="skill-green">Random Forest</span><span class="skill-orange">XGBoost</span></div>
+          <a href="https://github.com/mvishnunaidu/SolarNet_Pro.git" target="_blank" rel="noopener" class="project-link">View source ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal-scale" data-category="ai">
+        <div class="project-media"><img src="assets/projects/multiagent.png" alt="Multi-Agent Research Assistant" loading="lazy"></div>
+        <div class="project-body">
+          <span class="project-tag">flagship · ai</span>
+          <h3>Multi-Agent Research Assistant</h3>
+          <p>A 4-agent RAG pipeline — Planner, Researcher, Summarizer, Report Generator — that decomposes research queries into sub-tasks and synthesizes a structured report, with per-agent error isolation.</p>
+          <ul class="project-points">
+            <li><strong>Use Case:</strong> Accelerating academic literature reviews and automated data synthesis.</li>
+            <li>Document ingestion (PDF/DOCX/TXT → chunking → FAISS) using Gemini API embeddings for grounded Q&amp;A.</li>
+            <li>Automatic 4-provider LLM fallback (Gemini, OpenAI, Groq, DeepSeek) for uninterrupted responses.</li>
+            <li>Pytest suite for orchestration and API validation; deployed live on Render.</li>
+          </ul>
+          <div class="project-stack"><span class="skill-blue">Python</span><span class="skill-cyan">FastAPI</span><span class="skill-pink">LangChain</span><span class="skill-purple">FAISS</span></div>
+          <a href="https://github.com/mvishnunaidu/multi-agent-research-assistant.git" target="_blank" rel="noopener" class="project-link">View source ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal-scale" data-category="web">
+        <div class="project-media"><img src="assets/projects/student.png" alt="Student Management System" loading="lazy"></div>
+        <div class="project-body">
+          <span class="project-tag">web · backend</span>
+          <h3>Student Management System</h3>
+          <p>Role-based student management system with secure REST APIs and responsive dashboards.</p>
+          <ul class="project-points">
+            <li><strong>Use Case:</strong> Streamlining enrollment tracking and student record administration for schools.</li>
+            <li>Django REST Framework APIs secured with JWT authentication.</li>
+            <li>Normalized MySQL schema with role-based access control.</li>
+          </ul>
+          <div class="project-stack"><span class="skill-green">Django</span><span class="skill-blue">DRF</span><span class="skill-orange">MySQL</span></div>
+          <a href="https://github.com/mvishnunaidu/student-management-system.git" target="_blank" rel="noopener" class="project-link">View source ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal-scale" data-category="web">
+        <div class="project-media"><img src="assets/projects/portfolio.png" alt="Personal Portfolio" loading="lazy"></div>
+        <div class="project-body">
+          <span class="project-tag">web · frontend</span>
+          <h3>Personal Portfolio Website</h3>
+          <p>A modern, highly interactive personal portfolio website designed to showcase projects and skills with sleek UI/UX aesthetics.</p>
+          <ul class="project-points">
+            <li><strong>Use Case:</strong> Establishing a strong online presence and presenting work effectively to employers.</li>
+            <li>Fully responsive layout with smooth scroll animations and glassmorphism styling.</li>
+            <li>Dynamic project filtering system and modular CSS structure.</li>
+          </ul>
+          <div class="project-stack"><span class="skill-blue">HTML5</span><span class="skill-purple">CSS3</span><span class="skill-orange">JavaScript</span></div>
+          <a href="https://github.com/mvishnunaidu/portfolio-vishnu" target="_blank" rel="noopener" class="project-link">View source ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects-more reveal-scale center" style="margin-top: 40px; text-align: center;">
+      <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 20px;">Interested in seeing more?</p>
+      <a href="https://github.com/mvishnunaidu" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 12px 24px; border-radius: 12px; font-weight: 600;">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.4-5.25 5.68.41.36.78 1.06.78 2.14 0 1.54-.01 2.79-.01 3.17 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg>
+        View All on GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== CONTACT ===== -->
+<section class="section section-alt section-contact" id="contact" style="padding-top: 60px;">
+  <div class="section-inner">
+    <p class="eyebrow reveal-scale center">Get In Touch</p>
+    <h2 class="section-title reveal-scale center">Let’s Build Something<br>Amazing Together</h2>
+
+    <div class="contact-layout">
+      <div class="contact-info-col reveal-left bento-card" style="display: flex; flex-direction: column; justify-content: space-between; padding: 40px; height: 100%;">
+        <div>
+          <h3 style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 16px;">Get in touch</h3>
+          <p style="color: var(--text-muted); margin-bottom: 32px; line-height: 1.6;">Whether you have a question, a project idea, or just want to say hi, I'll try my best to get back to you!</p>
+          <div class="contact-actions" style="gap: 16px; width: 100%;">
+            <a href="mailto:mvishnunaidu7@gmail.com" class="btn btn-secondary" style="width: 100%; justify-content: flex-start; padding: 14px 20px;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" style="margin-right: 12px; color: var(--violet);"><rect x="2" y="4" width="20" height="16" rx="2.5"/><path d="m3 6 9 7 9-7"/></svg>
+              mvishnunaidu7@gmail.com
+            </a>
+            <a href="tel:+918247365958" class="btn btn-secondary" style="width: 100%; justify-content: flex-start; padding: 14px 20px;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" style="margin-right: 12px; color: var(--violet);"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +91 8247365958
+            </a>
+          </div>
+        </div>
+        
+        <div style="margin-top: 40px;">
+          <h4 style="font-size: .85rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-faint); margin-bottom: 16px;">Connect with me</h4>
+          <div class="contact-socials" style="gap: 16px; flex-wrap: wrap;">
+            <a href="https://github.com/mvishnunaidu" target="_blank" rel="noopener" class="btn btn-ghost" style="padding: 12px; border-radius: 12px;" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.4-5.25 5.68.41.36.78 1.06.78 2.14 0 1.54-.01 2.79-.01 3.17 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/vishnu-muchinthala" target="_blank" rel="noopener" class="btn btn-ghost" style="padding: 12px; border-radius: 12px;" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+            </a>
+            <a href="assets/nexus-card/index.html" target="_blank" rel="noopener" class="btn btn-ghost" style="padding: 12px; border-radius: 12px;" aria-label="Digital Card">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2.5"/><line x1="2" y1="9.5" x2="22" y2="9.5"/><line x1="6" y1="14" x2="11" y2="14"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal-right" id="contactForm">
+        <div class="form-group">
+          <input type="text" name="name" id="cf-name" placeholder=" " required>
+          <label for="cf-name">Your Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" id="cf-email" placeholder=" " required>
+          <label for="cf-email">Your Email</label>
+        </div>
+        <div class="form-group">
+          <input type="text" name="subject" id="cf-subject" placeholder=" " required>
+          <label for="cf-subject">Subject</label>
+        </div>
+        <div class="form-group">
+          <textarea name="message" id="cf-message" placeholder=" " rows="5" required></textarea>
+          <label for="cf-message">Your Message</label>
+        </div>
+        <button type="submit" class="btn btn-primary contact-form-submit">
+          Send Message
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+        </button>
+        <p class="contact-form-note" id="cfNote"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="section-inner footer-top">
+    <div class="footer-brand">
+      <img src="assets/img/v_logo.png" alt="" class="footer-logo">
+    </div>
+    <div class="footer-socials">
+      <a href="https://github.com/mvishnunaidu" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.4-5.25 5.68.41.36.78 1.06.78 2.14 0 1.54-.01 2.79-.01 3.17 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/vishnu-muchinthala" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+      </a>
+      <a href="mailto:mvishnunaidu7@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2.5"/><path d="m3 6 9 7 9-7"/></svg>
+      </a>
+      <a href="https://www.instagram.com/m_vishnunaidu" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://linktr.ee/mvishnunaidu7" target="_blank" rel="noopener" aria-label="Linktree">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 0 0 7.54.54l2-2a5 5 0 0 0-7.07-7.07l-1.14 1.13"/><path d="M14 11a5 5 0 0 0-7.54-.54l-2 2a5 5 0 0 0 7.07 7.07l1.14-1.13"/></svg>
+      </a>
+      <a href="assets/nexus-card/index.html" target="_blank" rel="noopener" aria-label="Digital Card">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2.5"/><line x1="2" y1="9.5" x2="22" y2="9.5"/><line x1="6" y1="14" x2="11" y2="14"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="section-inner">
+    <p class="footer-tagline">Perfection isn't the goal — precision is.</p>
+  </div>
+  <div class="section-inner footer-bottom">
+    <span>© 2026 Vishnu Vardhan Naidu. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
