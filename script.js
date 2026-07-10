@@ -28,6 +28,38 @@
 })();
 
 // ============================================================
+// Typed role text (Photo Tag)
+// ============================================================
+(function photoRoleTyped(){
+  const el = document.getElementById('photoRole');
+  if(!el) return;
+  const roles = [
+    'ML / GenAI Engineer',
+    'Full-Stack Python Dev',
+    'Software Engineer',
+    'Backend API Developer'
+  ];
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduced){ el.textContent = roles[0]; return; }
+  
+  let r=0,c=roles[0].length,deleting=true;
+  function tick(){
+    const word = roles[r];
+    if(!deleting){
+      c++; el.textContent = word.slice(0,c);
+      if(c===word.length){ deleting=true; setTimeout(tick,2500); return; }
+    } else {
+      c--; el.textContent = word.slice(0,c);
+      if(c===0){ deleting=false; r=(r+1)%roles.length; }
+    }
+    setTimeout(tick, deleting?35:60);
+  }
+  // Start with the first word already typed, wait 2.5s, then start deleting
+  el.textContent = roles[0];
+  setTimeout(tick, 2500);
+})();
+
+// ============================================================
 // Theme toggle (persists for the session)
 // ============================================================
 (function themeToggle(){
