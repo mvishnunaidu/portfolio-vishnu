@@ -629,8 +629,8 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
     gap: 8px !important;
   }
   .journey-stats-flex > div { flex: 1; text-align: center !important; }
-  .journey-stats-flex .about-gradient-text { font-size: 0.95rem !important; display: block; margin-bottom: 2px; }
-  .journey-stats-flex span:last-child { font-size: 0.85rem !important; display: block; line-height: 1.2 !important; font-weight: 600 !important; }
+  .journey-stats-flex .about-gradient-text { font-size: 1.10rem !important; display: block; margin-bottom: 2px; }
+  .journey-stats-flex span:last-child { font-size: 0.75rem !important; display: block; line-height: 1.2 !important; font-weight: 500 !important; }
   
   .about-bento-row-2 {
     grid-template-columns: 1fr;
