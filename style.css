@@ -184,32 +184,10 @@ a:focus-visible, button:focus-visible{ outline: 2px solid var(--violet); outline
 }
 .eyebrow{
   font-family: var(--font-mono); font-size:.86rem; color: var(--violet);
-  background: color-mix(in srgb, var(--violet) 10%, transparent);
+  background: color-mix(in srgb, var(--violet) 15%, transparent);
+  border: 1px solid color-mix(in srgb, var(--violet) 30%, transparent);
+  font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
   display:inline-block; padding: 6px 14px; border-radius: 999px; margin: 0 0 20px;
-}
-.eyebrow-blue {
-  color: #2563EB;
-  background: color-mix(in srgb, #2563EB 15%, transparent);
-  border: 1px solid color-mix(in srgb, #2563EB 40%, transparent);
-  font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
-}
-.eyebrow-teal {
-  color: #14B8A6;
-  background: color-mix(in srgb, #14B8A6 15%, transparent);
-  border: 1px solid color-mix(in srgb, #14B8A6 40%, transparent);
-  font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
-}
-.eyebrow-skyblue {
-  color: #0EA5E9;
-  background: color-mix(in srgb, #0EA5E9 15%, transparent);
-  border: 1px solid color-mix(in srgb, #0EA5E9 40%, transparent);
-  font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
-}
-.eyebrow-orange {
-  color: #F97316;
-  background: color-mix(in srgb, #F97316 15%, transparent);
-  border: 1px solid color-mix(in srgb, #F97316 40%, transparent);
-  font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
 }
 .eyebrow.center{ display:block; width:fit-content; margin-left:auto; margin-right:auto; }
 .hero-title{
