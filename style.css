@@ -681,14 +681,15 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
   /* Small "Available for opportunities" tag */
   .eyebrow { 
     font-size: 0.75rem !important; 
-    padding: 6px 12px !important; 
-    margin: 0 0 12px 0 !important; 
+    padding: 6px 14px !important; 
+    margin: 0 0 16px 0 !important; 
     display: inline-block !important; 
-    background: color-mix(in srgb, var(--violet) 12%, transparent) !important;
+    background: color-mix(in srgb, var(--violet) 10%, transparent) !important;
+    border: 1px solid color-mix(in srgb, var(--violet) 20%, transparent) !important;
     border-radius: 999px !important;
     color: var(--violet) !important;
     font-weight: 600 !important;
-    white-space: normal !important;
+    white-space: nowrap !important;
     opacity: 1 !important; 
     transform: none !important;
     visibility: visible !important;
