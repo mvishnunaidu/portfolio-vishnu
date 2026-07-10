@@ -654,7 +654,7 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
     scroll-margin-top: 56px; 
   }
   .section-title[style], .section-title { margin-bottom: 20px !important; font-size: 1.5rem !important; }
-  .hero[style], .hero { padding-top: 110px !important; padding-bottom: 20px !important; scroll-margin-top: 0; }
+  .hero[style], .hero { padding-top: 140px !important; padding-bottom: 20px !important; scroll-margin-top: 0; }
   .hero-inner { gap: 20px !important; }
   .hero-desc { margin-bottom: 16px !important; font-size: 0.88rem !important; line-height: 1.5 !important; }
   .hero-title { font-size: 1.6rem !important; line-height: 1.1 !important; margin-bottom: 8px !important; }
@@ -664,14 +664,17 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
   .eyebrow { 
     font-size: 0.85rem !important; 
     padding: 0 !important; 
-    margin: 0 0 8px 0 !important; 
+    margin: 0 0 12px 0 !important; 
     display: inline-block !important; 
     background: transparent !important;
+    color: var(--violet) !important;
     font-weight: 600 !important;
     white-space: normal !important;
     opacity: 1 !important; 
     transform: none !important;
     visibility: visible !important;
+    position: relative !important;
+    z-index: 100 !important;
   }
   
   /* Bento cards compaction */
