@@ -137,7 +137,9 @@
       const viewMoreBtn = document.getElementById('viewMoreProjectsBtn');
       if(projGrid && projGrid.classList.contains('compact-mobile')) {
         projGrid.classList.remove('compact-mobile');
-        if(viewMoreBtn) viewMoreBtn.parentElement.style.display = 'none';
+        if(viewMoreBtn) {
+          viewMoreBtn.innerHTML = 'View Less Projects <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>';
+        }
       }
       
       const solarnetCard = document.getElementById('solarnet-card');
@@ -168,8 +170,13 @@
   const grid = document.querySelector('.project-grid');
   if(!btn || !grid) return;
   btn.addEventListener('click', () => {
-    grid.classList.remove('compact-mobile');
-    btn.parentElement.style.display = 'none';
+    grid.classList.toggle('compact-mobile');
+    if (grid.classList.contains('compact-mobile')) {
+      btn.innerHTML = 'View More Projects <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>';
+      grid.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      btn.innerHTML = 'View Less Projects <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>';
+    }
   });
 })();
 
