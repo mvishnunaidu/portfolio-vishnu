@@ -594,9 +594,9 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
   .nav-actions { order: 3; margin-left: 0; flex-shrink: 0; }
   .nav-burger { display: none; }
   .nav-repo{ display:none; }
-  .hero-inner{ grid-template-columns: 1fr; text-align:center; }
-  .hero-desc{ margin-left:auto; margin-right:auto; }
-  .hero-actions{ justify-content:center; }
+  .hero-inner{ grid-template-columns: 1fr; text-align:left !important; }
+  .hero-desc{ margin-left:0 !important; margin-right:0 !important; }
+  .hero-actions{ justify-content:flex-start !important; }
   .about-bento-top{ grid-template-columns: 1fr; }
   
   .about-bento-row-1, .about-bento-row-2 {
@@ -621,21 +621,21 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
   .intro-text { font-size: 1.6rem !important; gap: 8px !important; flex-wrap: wrap; justify-content: center; }
   
   .section, section[id] { 
-    padding: 60px var(--pad) 40px !important; 
+    padding: 40px var(--pad) 30px !important; 
     scroll-margin-top: 60px; 
   }
-  .section-title[style], .section-title { margin-bottom: 32px !important; font-size: 1.8rem !important; }
-  .hero[style], .hero { padding-top: 100px !important; padding-bottom: 30px !important; scroll-margin-top: 0; }
-  .hero-inner { gap: 32px !important; }
-  .hero-desc { margin-bottom: 24px !important; font-size: 0.95rem !important; }
-  .hero-title { font-size: 2.2rem !important; line-height: 1.1 !important; margin-bottom: 12px !important; }
+  .section-title[style], .section-title { margin-bottom: 24px !important; font-size: 1.6rem !important; }
+  .hero[style], .hero { padding-top: 90px !important; padding-bottom: 20px !important; scroll-margin-top: 0; }
+  .hero-inner { gap: 24px !important; }
+  .hero-desc { margin-bottom: 20px !important; font-size: 0.95rem !important; }
+  .hero-title { font-size: 1.8rem !important; line-height: 1.1 !important; margin-bottom: 12px !important; }
   .hero-role { font-size: 1rem !important; margin-bottom: 16px !important; }
   
   /* Small "Available for opportunities" tag */
   .eyebrow { 
     font-size: 0.75rem !important; 
     padding: 4px 12px !important; 
-    margin: 0 auto 16px !important; 
+    margin: 0 0 16px 0 !important; 
     display: inline-block !important; 
   }
   
@@ -654,8 +654,8 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
   .projects-more[style] { margin-top: 32px !important; }
   
   /* Contact section compaction */
-  .contact-desc { margin-bottom: 24px !important; font-size: 0.95rem !important; }
-  .contact-layout { gap: 32px !important; }
+  .contact-desc { margin-bottom: 20px !important; font-size: 0.95rem !important; }
+  .contact-layout { gap: 16px !important; text-align: left !important; }
   .contact-form { padding: 24px 20px !important; }
   
   .project-card.featured{ grid-template-columns: 1fr; }
