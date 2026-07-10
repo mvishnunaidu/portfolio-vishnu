@@ -44,7 +44,7 @@ html[data-theme="dark"]{
 }
 
 *{ box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-html{ scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html{ scroll-behavior: smooth; -webkit-text-size-adjust: 100%; overflow-x: hidden; }
 body{
   margin:0; background: var(--bg); color: var(--text);
   font-family: var(--font-body); font-size: 16px; line-height: 1.65;
@@ -564,8 +564,26 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
    RESPONSIVE
    ============================================================ */
 @media (max-width: 900px){
-  .nav-links{ display:none; }
-  .nav-burger{ display:block; }
+  .nav-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-links {
+    display: flex;
+    gap: 12px;
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .nav-links a {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+  .brand-logo { order: 1; }
+  .nav-actions { order: 2; margin-left: auto; }
+  .nav-burger { display: none; }
   .nav-repo{ display:none; }
   .hero-inner{ grid-template-columns: 1fr; text-align:center; }
   .hero-desc{ margin-left:auto; margin-right:auto; }
@@ -587,10 +605,10 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
   .hero-visual{ min-height: 320px; }
   .photo-ring{ width:220px; height:220px; }
   .orbit-icon{ width:44px; height:44px; padding:10px; }
+  .oi-1{ left:2%; } .oi-3{ right:2%; } .oi-4{ right:0%; } .oi-2{ left:0%; }
 }
 @media (max-width: 520px){
   .journey-stats{ grid-template-columns: 1fr 1fr; }
   .hero{ padding-top: 130px; }
-  .oi-1{ left:2%; } .oi-3{ right:2%; } .oi-4{ right:0%; } .oi-2{ left:0%; }
   .journey-stats-flex { gap: 20px; }
 }
