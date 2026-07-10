@@ -181,24 +181,29 @@
 })();
 
 // ============================================================
-// Read More Projects Toggle (Mobile)
+// Read More Projects & Experience Toggle (Mobile)
 // ============================================================
 (function setupReadMore() {
-  const cards = document.querySelectorAll('.project-card');
-  cards.forEach(card => {
-    const ul = card.querySelector('.project-points');
-    if (ul) {
-      const btn = document.createElement('button');
-      btn.className = 'read-more-btn';
-      btn.innerText = 'Read More';
-      
-      ul.parentNode.insertBefore(btn, ul.nextSibling);
-      
-      btn.addEventListener('click', () => {
-        ul.classList.toggle('expanded');
-        btn.innerText = ul.classList.contains('expanded') ? 'Read Less' : 'Read More';
-      });
-    }
-  });
+  const processCards = (selector, ulSelector) => {
+    const cards = document.querySelectorAll(selector);
+    cards.forEach(card => {
+      const ul = card.querySelector(ulSelector);
+      if (ul) {
+        const btn = document.createElement('button');
+        btn.className = 'read-more-btn';
+        btn.innerText = 'Read More';
+        
+        ul.parentNode.insertBefore(btn, ul.nextSibling);
+        
+        btn.addEventListener('click', () => {
+          ul.classList.toggle('expanded');
+          btn.innerText = ul.classList.contains('expanded') ? 'Read Less' : 'Read More';
+        });
+      }
+    });
+  };
+
+  processCards('.project-card', '.project-points');
+  processCards('.timeline-card', 'ul');
 })();
 

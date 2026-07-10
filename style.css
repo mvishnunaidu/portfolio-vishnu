@@ -685,7 +685,8 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
   .timeline-card { padding: 16px !important; }
   .timeline-card h3 { font-size: 1.1rem !important; margin-bottom: 4px !important; }
   .timeline-card p, .timeline-card ul { font-size: 0.88rem !important; line-height: 1.5 !important; }
-  .timeline-card ul { padding-left: 16px !important; }
+  .timeline-card ul { padding-left: 16px !important; display: none; }
+  .timeline-card ul.expanded { display: block; margin-top: 12px; margin-bottom: 12px; }
   .timeline-when { font-size: 0.75rem !important; margin-bottom: 8px !important; }
   
   .project-body { padding: 20px 16px !important; }
