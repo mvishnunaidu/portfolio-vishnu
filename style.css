@@ -610,16 +610,16 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
   .about-bento-top{ grid-template-columns: 1fr; }
   
   .about-bento-row-1 {
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 8px !important;
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
     margin-bottom: 12px;
   }
   .about-bento-row-1 .bento-card {
-    padding: 12px 6px !important;
-    text-align: center;
+    padding: 20px 16px !important;
+    text-align: left;
   }
-  .about-bento-row-1 h3 { font-size: 0.95rem !important; margin-bottom: 4px !important; }
-  .about-bento-row-1 p { font-size: 0.65rem !important; line-height: 1.2 !important; margin-bottom: 0 !important; }
+  .about-bento-row-1 h3 { font-size: 1.2rem !important; margin-bottom: 8px !important; }
+  .about-bento-row-1 p { font-size: 0.88rem !important; line-height: 1.5 !important; margin-bottom: 16px !important; }
   
   .about-bento-row-2 {
     grid-template-columns: 1fr;
@@ -704,20 +704,20 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
   .projects-more[style] { margin-top: 24px !important; }
   
   /* Contact section compaction */
-  .contact-info-col { gap: 8px !important; padding-top: 0 !important; }
-  .contact-actions { gap: 8px !important; }
-  .contact-desc { margin-bottom: 8px !important; font-size: 0.85rem !important; line-height: 1.4 !important; }
-  .contact-layout { gap: 12px !important; text-align: left !important; }
-  .contact-form { padding: 12px 10px !important; gap: 8px !important; border-radius: 12px !important; }
-  .form-group { margin-bottom: 4px !important; }
-  .form-group input, .form-group textarea { padding: 6px 4px 4px !important; font-size: 0.85rem !important; }
-  .form-group textarea { min-height: 60px !important; }
-  .form-group label { top: 6px !important; font-size: 0.85rem !important; }
+  .contact-info-col { gap: 12px !important; padding-top: 0 !important; }
+  .contact-actions { gap: 12px !important; }
+  .contact-desc { margin-bottom: 16px !important; font-size: 0.88rem !important; line-height: 1.5 !important; }
+  .contact-layout { gap: 16px !important; text-align: left !important; }
+  .contact-form { padding: 20px 16px !important; gap: 12px !important; border-radius: 16px !important; }
+  .form-group { margin-bottom: 6px !important; }
+  .form-group input, .form-group textarea { padding: 10px 8px 6px !important; font-size: 0.9rem !important; }
+  .form-group textarea { min-height: 80px !important; }
+  .form-group label { top: 10px !important; font-size: 0.9rem !important; }
   .form-group input:focus + label,
   .form-group input:not(:placeholder-shown) + label,
   .form-group textarea:focus + label,
-  .form-group textarea:not(:placeholder-shown) + label { top: -10px !important; font-size: 0.7rem !important; }
-  .contact-form-submit { padding: 10px !important; font-size: 0.85rem !important; margin-top: 4px !important; }
+  .form-group textarea:not(:placeholder-shown) + label { top: -8px !important; font-size: 0.75rem !important; }
+  .contact-form-submit { padding: 12px !important; font-size: 0.9rem !important; margin-top: 8px !important; }
   
   .project-card.featured{ grid-template-columns: 1fr; }
   .edu-grid{ grid-template-columns: 1fr; }
