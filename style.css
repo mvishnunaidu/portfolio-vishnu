@@ -616,29 +616,43 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
   }
   
   /* Override large desktop inline styles for mobile */
-  .section[style], .section { padding: 40px var(--pad) !important; }
+  .section, section[id] { 
+    padding: 60px var(--pad) 40px !important; 
+    scroll-margin-top: 60px; 
+  }
   .section-title[style], .section-title { margin-bottom: 32px !important; font-size: 1.8rem !important; }
-  .hero[style], .hero { padding-top: 100px !important; padding-bottom: 20px !important; }
-  .hero-inner { gap: 24px !important; }
-  .hero-desc { margin-bottom: 20px !important; }
-  .hero-title { font-size: 2.2rem !important; }
+  .hero[style], .hero { padding-top: 100px !important; padding-bottom: 30px !important; scroll-margin-top: 0; }
+  .hero-inner { gap: 32px !important; }
+  .hero-desc { margin-bottom: 24px !important; font-size: 0.95rem !important; }
+  .hero-title { font-size: 2.2rem !important; line-height: 1.1 !important; margin-bottom: 12px !important; }
+  .hero-role { font-size: 1rem !important; margin-bottom: 16px !important; }
+  
+  /* Small "Available for opportunities" tag */
+  .eyebrow { 
+    font-size: 0.75rem !important; 
+    padding: 4px 12px !important; 
+    margin: 0 auto 16px !important; 
+    display: inline-block !important; 
+  }
   
   /* Bento cards compaction */
-  .bento-card { padding: 20px !important; }
-  .bento-card h3[style], .bento-card h3 { margin-bottom: 12px !important; font-size: 1.4rem !important; }
-  .bento-card p[style], .bento-card p { margin-bottom: 20px !important; font-size: 0.95rem !important; }
-  .about-gradient-text { font-size: 1.6rem !important; }
+  .bento-card { padding: 24px 20px !important; }
+  .bento-card h3[style], .bento-card h3 { margin-bottom: 12px !important; font-size: 1.3rem !important; }
+  .bento-card p[style], .bento-card p { margin-bottom: 20px !important; font-size: 0.9rem !important; line-height: 1.6 !important; }
+  .about-gradient-text { font-size: 1.5rem !important; }
   
   /* Timeline & Projects compaction */
-  .timeline { gap: 16px !important; }
+  .timeline { gap: 24px !important; margin-top: 10px !important; }
   .timeline-card { padding: 16px 20px !important; }
-  .project-body { padding: 20px !important; }
-  .projects-more[style] { margin-top: 24px !important; }
+  .project-body { padding: 24px 20px !important; }
+  .project-body h3 { font-size: 1.4rem !important; }
+  .project-body p { font-size: 0.9rem !important; line-height: 1.6 !important; }
+  .projects-more[style] { margin-top: 32px !important; }
   
   /* Contact section compaction */
-  .contact-desc { margin-bottom: 24px !important; }
+  .contact-desc { margin-bottom: 24px !important; font-size: 0.95rem !important; }
   .contact-layout { gap: 32px !important; }
-  .contact-form { padding: 20px !important; }
+  .contact-form { padding: 24px 20px !important; }
   
   .project-card.featured{ grid-template-columns: 1fr; }
   .edu-grid{ grid-template-columns: 1fr; }

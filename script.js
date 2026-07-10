@@ -173,35 +173,3 @@
   });
 })();
 
-// ============================================================
-// Smart Sticky Header
-// ============================================================
-(function smartHeader(){
-  const header = document.getElementById('nav');
-  if(!header) return;
-  
-  let lastScroll = 0;
-  window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    if (currentScroll <= 0) {
-      header.style.transform = 'translateY(0)';
-      return;
-    }
-    if (currentScroll > lastScroll && currentScroll > 60) {
-      header.style.transform = 'translateY(-100%)';
-    } else {
-      header.style.transform = 'translateY(0)';
-    }
-    lastScroll = currentScroll;
-  });
-
-  const navLinks = document.querySelectorAll('.nav-links a');
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      if (window.innerWidth <= 900) {
-        header.style.transform = 'translateY(-100%)';
-      }
-    });
-  });
-})();
-
