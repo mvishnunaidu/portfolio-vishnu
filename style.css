@@ -199,16 +199,16 @@ a:focus-visible, button:focus-visible{ outline: 2px solid var(--violet); outline
   border: 1px solid color-mix(in srgb, #10B981 40%, transparent);
   font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
 }
-.eyebrow-cyan {
-  color: var(--cyan);
-  background: color-mix(in srgb, var(--cyan) 15%, transparent);
-  border: 1px solid color-mix(in srgb, var(--cyan) 40%, transparent);
+.eyebrow-skyblue {
+  color: #0EA5E9;
+  background: color-mix(in srgb, #0EA5E9 15%, transparent);
+  border: 1px solid color-mix(in srgb, #0EA5E9 40%, transparent);
   font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
 }
-.eyebrow-red {
-  color: #EF4444;
-  background: color-mix(in srgb, #EF4444 15%, transparent);
-  border: 1px solid color-mix(in srgb, #EF4444 40%, transparent);
+.eyebrow-orange {
+  color: #F97316;
+  background: color-mix(in srgb, #F97316 15%, transparent);
+  border: 1px solid color-mix(in srgb, #F97316 40%, transparent);
   font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
 }
 .eyebrow.center{ display:block; width:fit-content; margin-left:auto; margin-right:auto; }
