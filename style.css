@@ -626,6 +626,13 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
     gap: 12px;
     margin-bottom: 12px;
   }
+  .about-bento-row-2 .bento-card { padding: 16px 12px !important; }
+  .about-bento-row-2 .about-gradient-bg[style] { width: 40px !important; height: 40px !important; margin-bottom: 12px !important; }
+  .about-bento-row-2 .bento-card h3[style] { margin-bottom: 12px !important; font-size: 1.2rem !important; }
+  .about-bento-row-2 .bento-card div[style*="gap"] { gap: 8px !important; flex-direction: row !important; flex-wrap: wrap !important; }
+  .passion-tag { font-size: 0.75rem !important; padding: 6px 12px !important; }
+  .tech-badge { font-size: 0.75rem !important; padding: 4px 8px !important; gap: 6px !important; }
+  .tech-badge svg { width: 14px !important; height: 14px !important; }
   
   .project-grid{ grid-template-columns: 1fr; gap: 16px; }
   .project-grid.compact-mobile .project-card:nth-child(n+3) {
