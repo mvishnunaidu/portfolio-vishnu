@@ -666,8 +666,15 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
     scroll-margin-top: 56px; 
   }
   .section-title[style], .section-title { margin-bottom: 20px !important; font-size: 1.5rem !important; }
-  .hero[style], .hero { padding-top: 140px !important; padding-bottom: 20px !important; scroll-margin-top: 0; }
-  .hero-inner { gap: 20px !important; }
+  .hero[style], .hero { 
+    padding-top: 100px !important; 
+    padding-bottom: 40px !important; 
+    scroll-margin-top: 0; 
+    align-items: flex-start !important; 
+    height: auto !important;
+    min-height: 100vh !important;
+  }
+  .hero-inner { gap: 20px !important; margin-top: 20px !important; }
   .hero-desc { margin-bottom: 16px !important; font-size: 0.88rem !important; line-height: 1.5 !important; }
   .hero-title { font-size: 1.6rem !important; line-height: 1.1 !important; margin-bottom: 8px !important; }
   .hero-role { font-size: 0.95rem !important; margin-bottom: 12px !important; }
