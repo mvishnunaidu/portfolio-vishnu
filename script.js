@@ -133,6 +133,13 @@
       btn.classList.add('active');
       const filterValue = btn.getAttribute('data-filter');
       
+      const projGrid = document.querySelector('.project-grid');
+      const viewMoreBtn = document.getElementById('viewMoreProjectsBtn');
+      if(projGrid && projGrid.classList.contains('compact-mobile')) {
+        projGrid.classList.remove('compact-mobile');
+        if(viewMoreBtn) viewMoreBtn.parentElement.style.display = 'none';
+      }
+      
       const solarnetCard = document.getElementById('solarnet-card');
       if (solarnetCard) {
         if (filterValue === 'all') {
@@ -152,3 +159,17 @@
     });
   });
 })();
+
+// ============================================================
+// View More Projects (Mobile)
+// ============================================================
+(function viewMoreProjects(){
+  const btn = document.getElementById('viewMoreProjectsBtn');
+  const grid = document.querySelector('.project-grid');
+  if(!btn || !grid) return;
+  btn.addEventListener('click', () => {
+    grid.classList.remove('compact-mobile');
+    btn.parentElement.style.display = 'none';
+  });
+})();
+

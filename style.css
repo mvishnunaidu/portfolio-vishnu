@@ -268,6 +268,7 @@ a:focus-visible, button:focus-visible{ outline: 2px solid var(--violet); outline
    SECTIONS
    ============================================================ */
 .section{ padding: 100px var(--pad); }
+.view-more-container { display: none; }
 .section-alt{
   background:
     linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
@@ -565,24 +566,30 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
    ============================================================ */
 @media (max-width: 900px){
   .nav-inner {
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 8px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px var(--pad);
   }
+  .nav-inner::-webkit-scrollbar { display: none; }
   .nav-links {
     display: flex;
-    gap: 12px;
-    order: 3;
-    width: 100%;
-    justify-content: center;
-    margin-top: 10px;
-    flex-wrap: wrap;
+    gap: 6px;
+    order: 2;
+    width: auto;
+    margin-top: 0;
+    flex-wrap: nowrap;
+    align-items: center;
   }
   .nav-links a {
-    font-size: 0.85rem;
-    padding: 6px 10px;
+    font-size: 0.8rem;
+    padding: 6px 8px;
+    white-space: nowrap;
   }
-  .brand-logo { order: 1; }
-  .nav-actions { order: 2; margin-left: auto; }
+  .brand-logo { order: 1; flex-shrink: 0; }
+  .nav-actions { order: 3; margin-left: 0; flex-shrink: 0; }
   .nav-burger { display: none; }
   .nav-repo{ display:none; }
   .hero-inner{ grid-template-columns: 1fr; text-align:center; }
@@ -592,11 +599,24 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
   
   .about-bento-row-1, .about-bento-row-2 {
     grid-template-columns: 1fr;
-    gap: 40px;
-    margin-bottom: 60px;
+    gap: 24px;
+    margin-bottom: 30px;
   }
   
-  .project-grid{ grid-template-columns: 1fr; }
+  .project-grid{ grid-template-columns: 1fr; gap: 20px; }
+  .project-grid.compact-mobile .project-card:nth-child(n+3) {
+    display: none !important;
+  }
+  .view-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+  }
+  
+  .section { padding: 60px var(--pad); }
+  .hero { padding-top: 120px; padding-bottom: 40px; }
+  .timeline { gap: 20px; }
+  
   .project-card.featured{ grid-template-columns: 1fr; }
   .edu-grid{ grid-template-columns: 1fr; }
   .contact-layout{ grid-template-columns: 1fr; text-align:center; }
