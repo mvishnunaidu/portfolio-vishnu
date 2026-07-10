@@ -1,0 +1,63 @@
+{
+    "profile": {
+        "name": "Vishnu Vardhan Naidu",
+        "tagline": "Aspiring Software Engineer",
+        "location": "Bangalore, India",
+        "bannerImage": "../ele/nexus_bg.png",
+        "profileImage": "../ele/profile.png",
+        "themeColor": "#38bdf8"
+    },
+    "skills": [
+        "Aspiring Software Engineer",
+        "Python & Django"
+    ],
+    "socialLinks": [
+        {
+            "platform": "LinkedIn",
+            "url": "https://www.linkedin.com/in/vishnu-muchinthala",
+            "icon": "linkedin",
+            "tooltip": "LinkedIn"
+        },
+        {
+            "platform": "GitHub",
+            "url": "https://github.com/mvishnunaidu",
+            "icon": "github",
+            "tooltip": "GitHub"
+        },
+        {
+            "platform": "Email",
+            "url": "mailto:mvishnunaidu7@gmail.com",
+            "icon": "email",
+            "tooltip": "Email"
+        },
+        {
+            "platform": "Discord",
+            "url": "https://discord.com/users/75nodiscord23",
+            "icon": "discord",
+            "tooltip": "Discord"
+        },
+        {
+            "platform": "linktree",
+            "url": "https://linktr.ee/mvishnunaidu7",
+            "icon": "linktree",
+            "tooltip": "Linktree"
+        }
+    ],
+    "footer": {
+        "text": "Made by Vishnu",
+        "url": "https://github.com/mvishnunaidu",
+        "showHeart": true
+    },
+    "animations": {
+        "enableHover3D": true,
+        "enableRippleEffect": true,
+        "enableParallax": true
+    },
+    "customization": {
+        "cardWidth": "430px",
+        "cardBorderRadius": "24px",
+        "glowIntensity": "20px",
+        "backgroundType": "solid",
+        "backgroundColor": "#000000"
+    }
+}
