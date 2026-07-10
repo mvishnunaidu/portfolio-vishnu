@@ -45,15 +45,16 @@
 ## 📂 Project Structure
 
 ```bash
-vishnu-portfolio-2026/
-├── index.html              # 🌐 Main portfolio page
-├── nexus-card.html         # 📇 Standalone shareable digital business card
-├── style.css               # 💅 Design system, layout, animations, theming
-├── script.js               # ⚙️ Typed text, theme toggle, scroll reveal, mobile nav
-└── assets/                 # 📦 Static resources
-    ├── vishnu_resume.pdf   # 📄 Downloadable résumé
-    ├── img/                # 🖼️ Images (Profile & Logos)
-    └── projects/           # 💻 Project screenshots (MultiAgent, SolarNet, etc.)
+vishnu-portfolio/
+├── index.html                  # 🌐 Main portfolio page
+├── style.css                   # 💅 Design system, layout, animations, theming
+├── script.js                   # ⚙️ Typed text, theme toggle, scroll reveal, mobile nav
+└── assets/                     # 📦 Static resources
+    ├── nexus-card/             # 📇 Standalone shareable digital business card
+    │   └── index.html
+    ├── vishnu_resume.pdf       # 📄 Downloadable résumé
+    ├── img/                    # 🖼️ Images (Profile & Logos)
+    └── projects/               # 💻 Project screenshots
 ```
 
 ---
@@ -65,7 +66,7 @@ Ready to make it yours? It's easy!
 1. 📝 **Text & Content**: Open `index.html` — everything is neatly commented.
 2. 🖌️ **Colors & Theme**: Jump into `style.css` and tweak the CSS variables under `:root` (Light Mode) and `html[data-theme="dark"]` (Dark Mode).
 3. 🔗 **Project Links**: Search for `View source ↗` in `index.html` and replace with your actual repository URLs.
-4. 📇 **Nexus Card**: Edit the `.links` section directly inside `nexus-card.html`.
+4. 📇 **Nexus Card**: Edit the `.links` section directly inside `assets/nexus-card/index.html`.
 
 ---
 
@@ -75,7 +76,7 @@ Deploying is literally drag-and-drop:
 
 - Just drag this folder into [Netlify Drop](https://app.netlify.com/drop) or link your GitHub repo to Vercel/Netlify.
 - `index.html` is your main entry point.
-- **Pro Tip:** Share `your-site.com/nexus-card.html` directly as your digital business card on LinkedIn, Linktree, or email signatures!
+- **Pro Tip:** Share `your-site.com/assets/nexus-card/index.html` directly as your digital business card on LinkedIn, Linktree, or email signatures!
 
 ---
 

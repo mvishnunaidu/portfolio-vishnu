@@ -661,7 +661,7 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
   .intro-text { font-size: 1.4rem !important; gap: 6px !important; flex-wrap: wrap; justify-content: center; }
   
   .section, section[id] { 
-    padding: 32px var(--pad) 24px !important; 
+    padding: 48px var(--pad) 32px !important; 
     scroll-margin-top: 56px; 
   }
   .section-title[style], .section-title { margin-bottom: 20px !important; font-size: 1.5rem !important; }
@@ -679,7 +679,7 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
   .hero-role { font-size: 0.95rem !important; margin-bottom: 12px !important; }
   
   /* Small "Available for opportunities" tag */
-  .eyebrow { 
+  .hero .eyebrow { 
     font-size: 0.55rem !important; 
     padding: 2px 8px !important; 
     margin: 0 0 10px 0 !important; 
