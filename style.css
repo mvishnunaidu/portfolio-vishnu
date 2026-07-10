@@ -136,6 +136,7 @@ a:focus-visible, button:focus-visible{ outline: 2px solid var(--violet); outline
   background: color-mix(in srgb, var(--bg) 78%, transparent);
   -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .nav-inner{
   max-width: var(--max-w); margin:0 auto; padding: 14px var(--pad);
@@ -568,15 +569,15 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
   .nav-inner {
     flex-wrap: nowrap;
     justify-content: space-between;
-    gap: 8px;
+    gap: 6px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    padding: 10px var(--pad);
+    padding: 10px 14px;
   }
   .nav-inner::-webkit-scrollbar { display: none; }
   .nav-links {
     display: flex;
-    gap: 6px;
+    gap: 4px;
     order: 2;
     width: auto;
     margin-top: 0;
@@ -584,11 +585,12 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
     align-items: center;
   }
   .nav-links a {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     padding: 6px 8px;
     white-space: nowrap;
   }
-  .brand-logo { order: 1; flex-shrink: 0; }
+  .brand-logo { height: 26px; order: 1; flex-shrink: 0; }
+  .theme-toggle { width: 30px; height: 30px; padding: 4px; border-radius: 8px; }
   .nav-actions { order: 3; margin-left: 0; flex-shrink: 0; }
   .nav-burger { display: none; }
   .nav-repo{ display:none; }
