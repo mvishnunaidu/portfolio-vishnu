@@ -194,7 +194,7 @@ a:focus-visible, button:focus-visible{ outline: 2px solid var(--violet); outline
   font-family: var(--font-mono); font-size: clamp(1rem, 2vw, 1.2rem); color: var(--blue);
   margin: 0 0 20px; min-height: 1.6em;
 }
-.caret{ animation: blink 1s step-end infinite; }
+.caret{ animation: none; opacity: 1; }
 @keyframes blink{ 50%{ opacity:0; } }
 .hero-desc{ color: var(--text-muted); max-width: 52ch; margin: 0 0 32px; font-size: 1.04rem; }
 .hero-actions{ display:flex; gap:14px; flex-wrap:wrap; }
@@ -221,11 +221,6 @@ a:focus-visible, button:focus-visible{ outline: 2px solid var(--violet); outline
   position:relative; width: 300px; height:300px; border-radius:50%;
   padding: 6px; background: var(--grad);
   box-shadow: 0 0 0 6px color-mix(in srgb, var(--violet) 12%, transparent), var(--shadow-lg);
-  animation: ring-pulse 4s ease-in-out infinite;
-}
-@keyframes ring-pulse{
-  0%,100%{ box-shadow: 0 0 0 6px color-mix(in srgb, var(--violet) 12%, transparent), var(--shadow-lg); }
-  50%{ box-shadow: 0 0 0 14px color-mix(in srgb, var(--violet) 6%, transparent), var(--shadow-lg); }
 }
 .photo-frame{ width:100%; height:100%; border-radius:50%; overflow:hidden; background: var(--surface); }
 .photo-frame img{ width:100%; height:100%; object-fit:cover; object-position: center top; }
@@ -602,8 +597,8 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
   
   .about-bento-row-1, .about-bento-row-2 {
     grid-template-columns: 1fr;
-    gap: 24px;
-    margin-bottom: 30px;
+    gap: 12px;
+    margin-bottom: 12px;
   }
   
   .project-grid{ grid-template-columns: 1fr; gap: 16px; }
@@ -626,7 +621,7 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
     scroll-margin-top: 56px; 
   }
   .section-title[style], .section-title { margin-bottom: 20px !important; font-size: 1.5rem !important; }
-  .hero[style], .hero { padding-top: 80px !important; padding-bottom: 20px !important; scroll-margin-top: 0; }
+  .hero[style], .hero { padding-top: 110px !important; padding-bottom: 20px !important; scroll-margin-top: 0; }
   .hero-inner { gap: 20px !important; }
   .hero-desc { margin-bottom: 16px !important; font-size: 0.88rem !important; line-height: 1.5 !important; }
   .hero-title { font-size: 1.6rem !important; line-height: 1.1 !important; margin-bottom: 8px !important; }
@@ -634,10 +629,12 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
   
   /* Small "Available for opportunities" tag */
   .eyebrow { 
-    font-size: 0.7rem !important; 
-    padding: 4px 10px !important; 
-    margin: 0 0 12px 0 !important; 
+    font-size: 0.85rem !important; 
+    padding: 0 !important; 
+    margin: 0 0 8px 0 !important; 
     display: inline-block !important; 
+    background: transparent !important;
+    font-weight: 600 !important;
     white-space: normal !important;
   }
   
@@ -654,9 +651,18 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
   .timeline-card p, .timeline-card ul { font-size: 0.88rem !important; line-height: 1.5 !important; }
   .timeline-card ul { padding-left: 16px !important; }
   .timeline-when { font-size: 0.75rem !important; margin-bottom: 8px !important; }
+  
   .project-body { padding: 20px 16px !important; }
   .project-body h3 { font-size: 1.2rem !important; margin-bottom: 6px !important;}
   .project-body p { font-size: 0.88rem !important; line-height: 1.5 !important; margin-bottom: 12px !important; }
+  .project-points { display: none; }
+  .project-points.expanded { display: block; margin-bottom: 12px; }
+  .read-more-btn {
+    background: transparent; border: 1px solid var(--border); color: var(--violet);
+    padding: 6px 12px; border-radius: 8px; font-size: 0.75rem; margin-bottom: 16px;
+    cursor: pointer; font-family: var(--font-display); font-weight: 600;
+  }
+  
   .project-points li { font-size: 0.88rem !important; line-height: 1.5 !important; }
   .projects-more[style] { margin-top: 24px !important; }
   
