@@ -187,6 +187,22 @@ a:focus-visible, button:focus-visible{ outline: 2px solid var(--violet); outline
   background: color-mix(in srgb, var(--violet) 10%, transparent);
   display:inline-block; padding: 6px 14px; border-radius: 999px; margin: 0 0 20px;
 }
+.eyebrow-blue {
+  color: var(--blue);
+  background: color-mix(in srgb, var(--blue) 10%, transparent);
+}
+.eyebrow-green {
+  color: #10B981;
+  background: color-mix(in srgb, #10B981 10%, transparent);
+}
+.eyebrow-orange {
+  color: #F59E0B;
+  background: color-mix(in srgb, #F59E0B 10%, transparent);
+}
+.eyebrow-pink {
+  color: #EC4899;
+  background: color-mix(in srgb, #EC4899 10%, transparent);
+}
 .eyebrow.center{ display:block; width:fit-content; margin-left:auto; margin-right:auto; }
 .hero-title{
   font-family: var(--font-display); font-weight:700; font-size: clamp(2.3rem, 5vw, 3.6rem);
