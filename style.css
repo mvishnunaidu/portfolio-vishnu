@@ -705,7 +705,7 @@ html[data-theme="dark"] .footer { background: var(--bg-soft); }
   .projects-more[style] { margin-top: 24px !important; }
   
   /* Contact section compaction */
-  .contact-info-col { gap: 12px !important; padding-top: 0 !important; }
+  .contact-info-col { gap: 12px !important; padding-top: 16px !important; }
   .contact-actions { gap: 12px !important; }
   .contact-desc { margin-bottom: 16px !important; font-size: 0.88rem !important; line-height: 1.5 !important; }
   .contact-layout { gap: 16px !important; text-align: left !important; }
