@@ -146,9 +146,6 @@
       border-bottom:1px solid var(--border); padding: 8px 0;
     `;
   });
-  links.querySelectorAll('a').forEach(a=>{
-    a.addEventListener('click', ()=>{ if(window.innerWidth<=900) links.style.display='none'; });
-  });
 })();
 
 // ============================================================
